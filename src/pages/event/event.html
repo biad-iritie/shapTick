@@ -1,0 +1,71 @@
+<!--
+  Generated template for the EventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<header-page [data] ="params"></header-page>
+<ion-content has-header>
+  <div class="event-list">
+    <ion-item class="event-item">
+      <img src="../../assets/imgs/people-1284516_1280.jpg" />
+      <div class="info">
+          <a class="btn btn-primary"  (click)="detailEvent()">
+              <div class="btDualLine">More</div>
+              <div class="btDualLine">Information</div>
+          </a>
+          <div class="boxInfEvent">
+            <b>
+                Disney
+            </b>
+            <span>
+                <ion-icon name="calendar" ></ion-icon>
+                20 to 22 November
+            </span>
+            <span>
+                <ion-icon name="locate"></ion-icon>
+                Itu, São Paulo
+            </span>
+          </div>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="eventInfoCart">
+    <h1>Red Hot Chilli Peppers, David Guetta</h1>
+    <span>Mussum Ipsum, cacilds vidis litro abertis</span>
+  </div>
+
+  <ion-list class="listEveCart">
+    <div class="item">
+        <div class="bxEventCart">
+          <b>VIP</b>
+          <span>{{p_vip}}</span>
+        </div>
+        <div class="cicleButtons counter-container" counter=""  min="1" max="30" step="1" editable="">
+          <a href="javascript:;" class="counter-minus" (click)="moins(nbre1)" >-</a>
+          
+            <input type="text" class="counter-field ng-pristine ng-valid ng-touched" value="{{nbre1}}" disabled>
+          <a href="javascript:;" class="counter-plus" (click)="plus(nbre1)">+</a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bxEventCart">
+          <b>NORMAL</b>
+          <span>{{p_normal}}</span>
+        </div>
+        <div class="cicleButtons counter-container" counter=""  min="1" max="30" step="1" editable="">
+            <a href="javascript:;" class="counter-minus" (click)="moins(nbre2)" >-</a>
+              <input type="text" class="counter-field ng-pristine ng-valid ng-touched" value="{{nbre2}}" disabled>
+            <a href="javascript:;" class="counter-plus" (click)="plus(nbre2)">+</a>
+          </div>  
+    </div>
+    <div class="item itemTotal">
+        <div class="bxEventCart">
+          <b>Total</b>
+          <span>{{total}} FCFA</span>
+        </div>
+        <a class="btn" ui-sref="menu.pay">Pay</a>
+    </div>
+  </ion-list>
+</ion-content>
