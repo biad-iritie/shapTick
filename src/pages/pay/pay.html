@@ -1,0 +1,56 @@
+<!--
+  Generated template for the PayPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<header-page [data] ="params"></header-page>
+
+
+<ion-content has-header>
+  <!-- <div class="purchaseNumber">
+    <span><b>Purchase</b> #1236</span>
+  </div> -->
+  <div class="list">
+    <a class="item item-thumbnail-left" href="#">
+      <img src="../../assets/imgs/people-1284516_1280.jpg">
+      <h2>Pretty Hate Machine</h2>
+      <span>
+        <ion-icon name="calendar" ></ion-icon>
+        20 to 22 November
+    </span>
+    </a>
+
+    <div class="item itemPay">
+      <div class="bxEventCart">
+        <b>BackStage</b>
+        <span>R$ 299,00*</span>
+      </div>
+    </div>
+    <div class="item itemPay">
+      <div class="bxEventCart">
+        <b>Lounge Vip Gold</b>
+        <span>R$ 99,84*</span>
+      </div>
+    </div>
+    <div class="item itemPay">
+      <div class="totalPurchase">
+        <b>Total Purchase</b>
+        <span>398,84</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="list list-inset boxPay">
+    <label class="item item-input">
+      <i class="icon ion-card placeholder-icon"></i>
+      <input type="number" placeholder="Card Number">
+    </label>
+    <label class="item item-input ">
+      <i class="icon ion-calendar placeholder-icon"></i>
+      <input type="month" placeholder="MM / YY">
+    </label>
+    
+    <a href="#/side-menu/pay-status" class="btn"> Confirm Pay</a>
+  </div>
+</ion-content>

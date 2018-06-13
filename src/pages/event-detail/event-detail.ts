@@ -30,7 +30,7 @@ export class EventDetailPage {
   fermer(){
     console.log('fermer');
     
-    //this.viewCtrl.dismiss()
+    this.viewCtrl.dismiss()
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { EventDetailPage } from '../event-detail/event-detail';
+import { PayPage } from '../pay/pay';
 /**
  * Generated class for the EventPage page.
  *
@@ -54,6 +55,12 @@ export class EventPage {
 
   giveTotal(){
     this.total= (this.p_normal * this.nbre1) + (this.p_vip * this.nbre2)
+  }
+
+  pay(){
+    this.navCtrl.push(PayPage,{
+      id:1
+    });
   }
 
 }

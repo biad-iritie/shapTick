@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HeaderPageComponent } from '../components/header-page/header-page';
 import { EventDetailPage } from '../pages/event-detail/event-detail';
+import { PayPage } from '../pages/pay/pay';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { EventDetailPage } from '../pages/event-detail/event-detail';
     HomePage,
     EventPage,
     EventDetailPage,
+    PayPage,
     HeaderPageComponent
   ],
   imports: [
@@ -32,6 +34,7 @@ import { EventDetailPage } from '../pages/event-detail/event-detail';
     HomePage,
     EventPage,
     EventDetailPage,
+    PayPage,
     HeaderPageComponent
   ],
   providers: [
