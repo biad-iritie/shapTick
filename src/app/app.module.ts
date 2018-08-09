@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HeaderPageComponent } from '../components/header-page/header-page';
 import { EventDetailPage } from '../pages/event-detail/event-detail';
 import { PayPage } from '../pages/pay/pay';
+import { PayStatusPage } from '../pages/pay-status/pay-status';
+
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import { PayPage } from '../pages/pay/pay';
     EventPage,
     EventDetailPage,
     PayPage,
+    PayStatusPage,
     HeaderPageComponent
   ],
   imports: [
@@ -35,6 +38,7 @@ import { PayPage } from '../pages/pay/pay';
     EventPage,
     EventDetailPage,
     PayPage,
+    PayStatusPage,
     HeaderPageComponent
   ],
   providers: [

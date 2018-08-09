@@ -1,0 +1,24 @@
+<!--
+  Generated template for the PayStatusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<header-page [data] ="params"></header-page>
+
+
+  <ion-content padding="true" class="has-header payStatus">
+    <div class="boxStatusPay error">
+      <h1>Transaction Error</h1>
+      <i class="ion-close-circled"></i>
+    </div>
+    <div class="boxStatusPay">
+      <h1>Transaction Sucessful</h1>
+      <i class="ion-ios-checkmark-outline"></i>
+    </div>
+    <div class="buttom-bar">
+      <a class="btn" ui-sref="menu.myTickets">View my Tickets</a>
+      <a class="btn" ui-sref="menu.home">Go to Home</a>
+    </div>
+  </ion-content>
+
